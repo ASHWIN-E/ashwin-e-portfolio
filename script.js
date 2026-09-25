@@ -5,7 +5,7 @@
  * corresponding development placeholder message in the interface.
  */
 const SITE_CONFIG = Object.freeze({
-  email: "",
+  email: "achukdkm@gmail.com",
   linkedin: "",
   github: "",
   resumeUrl: "assets/ashwin-e-resume.pdf",
