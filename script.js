@@ -8,7 +8,7 @@ const SITE_CONFIG = Object.freeze({
   email: "achukdkm@gmail.com",
   linkedin: "",
   github: "",
-  resumeUrl: "assets/ashwin-e-resume.pdf",
+  resumeUrl: "",
 });
 
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -236,7 +236,7 @@ contactForm?.addEventListener("submit", (event) => {
 document.querySelectorAll("[data-resume-button]").forEach((button) => {
   button.addEventListener("click", () => {
     if (!SITE_CONFIG.resumeUrl) {
-      showToast("Add a resume file path to SITE_CONFIG to enable this button.", "error");
+      showToast("My resume is not available yet. Please use the contact form instead.", "error");
       return;
     }
 
